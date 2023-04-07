@@ -1,0 +1,21 @@
+[
+    {
+        "title": "Track MCA",
+        "image": "./projectImages/phoneimage.png",
+        "description": "It is a self attendance android app specifically developed to keep track of the attendance of the students of Assam Engineering College pursuing MCA and are in 2nd sem, according to their specific class routine.",
+        "github": "",
+        "deployed": "",
+        "bgcolor": "#a5fc03",
+        "id":1
+    },
+    {
+        "title": "Portfolio Website",
+        "image": "./projectImages/lapimage.png",
+        "description": "A portfolio website showcasing my skills and general information. This is a practice project to familiarize myself with the basic concepts of React JS and front-end web development.",
+        "github": "",
+        "deployed": "",
+        "bgcolor": "#e7f702",
+        "id":1
+    }
+    
+]
