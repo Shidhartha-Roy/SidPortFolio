@@ -19,7 +19,7 @@ const NavLinks = () => {
         
         <a href="#" onClick={() => setIsMenuOpen(false)}>Home</a>
         <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
-        <a href="#" onClick={() => setIsMenuOpen(false)}>Technologies</a>
+        <a href="#tech" onClick={() => setIsMenuOpen(false)}>Technologies</a>
         <a href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</a>
         <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
       </nav> 

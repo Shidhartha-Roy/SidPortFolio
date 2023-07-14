@@ -3,6 +3,7 @@ import Landing from "./pages/landing/Landing";
 import About from "./pages/about/About";
 import Portfolio from "./pages/projects/Portfolio";
 import Contact from "./pages/contact/Contact";
+import Technologies from "./pages/technologies/skills";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Landing />
       <About />
+      <Technologies />
       <Portfolio />
       <Contact />
       
