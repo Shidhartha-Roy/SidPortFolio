@@ -95,18 +95,19 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: -10px;
+  margin-left: 10px;
 
   position: fixed;
   width: 100%;
   z-index: 999;
   top: 0; 
   
+  
 }
 
 .logo {
   height: 30px;
-  margin-left: -21px;
+  margin-left: -35px;
 }
 
 .links {
@@ -147,6 +148,7 @@ header {
   border: none;
   font-size: 16px;
   cursor: pointer;
+  
 }
 
 .openMenu,

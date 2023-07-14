@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-scroll";
+import { useState } from "react";
+
 
 import openMenu from "../images/open.svg";
 import closeMenu from "../images/close.svg";
@@ -17,10 +17,12 @@ const NavLinks = () => {
       </button>
       <nav className={`links ${isMenuOpen ? "open" : "closed"}`}>
         
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-      </nav>
+        <a href="#" onClick={() => setIsMenuOpen(false)}>Home</a>
+        <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
+        <a href="#" onClick={() => setIsMenuOpen(false)}>Technologies</a>
+        <a href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</a>
+        <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
+      </nav> 
     </>
   );
 };

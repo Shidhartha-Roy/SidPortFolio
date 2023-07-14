@@ -5,7 +5,7 @@ import ContactInfo from "../../components/ContactInfo"
 
 const Contact = () => {
     return(
-        <section className="contact">
+        <section className="contact" id="contact">
       <PageHeader title="Contact" description="Get in touch" />
       <div className="contactWrap container">
         <div className="row">
