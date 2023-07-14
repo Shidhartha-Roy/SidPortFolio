@@ -2,7 +2,7 @@
 
 /* --- VARIABLES --- */
 :root {
-  --bg-color: #101010;
+  --bg-color: #000000;
   --hl-color: #009e66;
   --text-color: #f3f3f3;
   --secondary-text-color: #9f9f9f;
@@ -37,6 +37,7 @@ body,
 #root {
   height: 100%;
   background-color: var(--bg-color);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -94,11 +95,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 10px;
+  margin-left: -10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .logo {
   height: 30px;
+  margin-left: -21px;
 }
 
 .links {
@@ -116,15 +121,16 @@ header {
 .links a {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 15px;
+  font-size: 21px;
   display: flex;
   justify-content: center;
-  padding: 20px 0;
   position: relative;
+  padding-top: 10px;
+  
 }
 
 .links a:hover {
-  color: white;
+  color: rgb(90, 201, 5);
 }
 
 .links.open {
@@ -165,11 +171,15 @@ header {
     width: 0;
     left: 0;
     padding: 0 10px;
+    
+    
+    
   }
 
   .links a {
     padding: 0px;
     margin-left: 3px;
+    font-size: 13px;
   }
 
   .links a:not(:last-child) {

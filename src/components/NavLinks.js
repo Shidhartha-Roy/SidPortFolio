@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 import openMenu from "../images/open.svg";
 import closeMenu from "../images/close.svg";
@@ -16,18 +16,10 @@ const NavLinks = () => {
         )}
       </button>
       <nav className={`links ${isMenuOpen ? "open" : "closed"}`}>
-        <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
-          Home
-        </NavLink>
-        <NavLink to="/about" onClick={() => setIsMenuOpen(false)}>
-          About
-        </NavLink>
-        <NavLink to="/portfolio" onClick={() => setIsMenuOpen(false)}>
-          Portfolio
-        </NavLink>
-        <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>
-          Contact
-        </NavLink>
+        <Link to="home" smooth={true} >Home</Link>
+       
+        <a href="#abot">About</a>
+        <a href="#proj">Projects</a>
       </nav>
     </>
   );

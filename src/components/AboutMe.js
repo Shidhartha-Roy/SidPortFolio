@@ -20,7 +20,7 @@ const AboutMe = ({ name,email,location, brand}) => {
     const handleDownload = () => {
         setDownloading(true);
         const link = document.createElement("a");
-        link.href = "https://drive.google.com/file/d/13ttQlsZ9cL_DjshD3Korw3zhulTD5wzn/view?usp=share_link";
+        link.href = "https://drive.google.com/file/d/1ZXH1YuNsiGx77ABeZNQesAbgNR52ACKp/view?usp=sharing";
         link.onload = () => {
           link.remove();
           setDownloading(false);

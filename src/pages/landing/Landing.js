@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import landingImage from "../../images/landingimage.png";
 import SocialIcons from "../../components/SocialIcons";
 
-const Landing = ({ name, tagline }) => {
+const Landing = () => {
   const styles = {
     landing: {
       height: "calc(100% - 93px)",
@@ -44,7 +44,7 @@ const Landing = ({ name, tagline }) => {
   });
 
   return (
-    <section className="landing" style={styles.landing}>
+    <section className="landing" style={styles.landing} id="home">
       <div className="textContainer" style={styles.textContainer}>
         <motion.h1
           className="name"
@@ -54,7 +54,7 @@ const Landing = ({ name, tagline }) => {
           animate={inView ? { y: 0, opacity: 1 } : { y: "-10vw", opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
-          {name}
+          Shidhartha Roy
         </motion.h1>
         <motion.p
           className="description"
@@ -63,7 +63,7 @@ const Landing = ({ name, tagline }) => {
           animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
-          {tagline}
+          Teacher and Developer
         </motion.p>
       </div>
       <div className="image-container">
