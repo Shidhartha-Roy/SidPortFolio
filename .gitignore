@@ -7,10 +7,9 @@
 
 # testing
 /coverage
-
 # production
 /build
-
+AnimatedRoutes.js
 # misc
 .DS_Store
 .env.local
