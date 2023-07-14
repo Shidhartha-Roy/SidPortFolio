@@ -16,10 +16,10 @@ const NavLinks = () => {
         )}
       </button>
       <nav className={`links ${isMenuOpen ? "open" : "closed"}`}>
-        <Link to="home" smooth={true} >Home</Link>
-       
-        <a href="#abot">About</a>
-        <a href="#proj">Projects</a>
+        
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
       </nav>
     </>
   );

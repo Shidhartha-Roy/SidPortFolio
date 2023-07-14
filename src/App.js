@@ -9,8 +9,8 @@ function App() {
   
   return (
     <>
-      <Header />
       
+      <Header />
       <Landing />
       
       <section id="abot">
