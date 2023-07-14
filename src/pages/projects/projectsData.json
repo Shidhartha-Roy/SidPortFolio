@@ -12,8 +12,8 @@
         "title": "Portfolio Website",
         "image": "./projectImages/lapimage.png",
         "description": "A portfolio website showcasing my skills and general information. This is a practice project to familiarize myself with the basic concepts of React JS and front-end web development.",
-        "github": "",
-        "deployed": "",
+        "github": "https://github.com/Shidhartha-Roy/SidPortFolio",
+        "deployed": "https://shidhartharoy.netlify.app/",
         "bgcolor": "#e7f702",
         "id":1
     }
