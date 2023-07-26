@@ -14,6 +14,8 @@ import MYSQL from "../images/mysqlLogo.png"
 import VSC from "../images/vscLogo.png"
 import ECLIPSE from "../images/eclipseLogo.png"
 import ANDROID from "../images/asLogo.png"
+import REACT from "../images/reactLogo.png"
+import REST from "../images/restLogo.png"
 
 
 
@@ -63,6 +65,12 @@ function Slider() {
           </Item>
           <Item>
           <img className="img" src={ANDROID} style={{ marginTop: "23px"}}/>
+          </Item>
+          <Item>
+          <img className="img" src={REACT} style={{height: "270px", width: "450px", marginTop: "-16px"}}/>
+          </Item>
+          <Item>
+          <img className="img" src={REST} style={{height: "270px", width: "450px", marginTop: "-16px"}}/>
           </Item>
         </Carousel>
       </div>

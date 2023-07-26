@@ -1,11 +1,11 @@
 [
     {
-        "title": "Track MCA",
-        "image": "./projectImages/phoneimage.png",
-        "description": "It is a self attendance android app specifically developed to keep track of the attendance of the students of Assam Engineering College pursuing MCA and are in 2nd sem, according to their specific class routine.",
-        "github": "",
+        "title": "Aaykar Saathi",
+        "image": "./projectImages/ASlapimage.png",
+        "description": "A Basic CRUD application using SPRING, REACT and MYSQL to help in understanding the different tax laws",
+        "github": "https://github.com/Shidhartha-Roy/AAYKAR-SAATHI",
         "deployed": "",
-        "bgcolor": "#a5fc03",
+        "bgcolor": "#f2303a",
         "id":1
     },
     {
@@ -15,6 +15,24 @@
         "github": "https://github.com/Shidhartha-Roy/SidPortFolio",
         "deployed": "https://shidhartharoy.netlify.app/",
         "bgcolor": "#e7f702",
+        "id":1
+    },
+    {
+        "title": "Track MCA",
+        "image": "./projectImages/phoneimage.png",
+        "description": "It is a self attendance android app specifically developed to keep track of the attendance of the students of Assam Engineering College pursuing MCA and are in 2nd sem, according to their specific class routine.",
+        "github": "https://github.com/Shidhartha-Roy/Track-MCA",
+        "deployed": "",
+        "bgcolor": "#a5fc03",
+        "id":1
+    },
+    {
+        "title": "Saptasur Fees MS",
+        "image": "./projectImages/smslapimage.png",
+        "description": "A fees Management system for Saptasur Music School made using PHP, HTML, CSS and Javascript",
+        "github": "https://github.com/Shidhartha-Roy/SaptasurFees",
+        "deployed": "http://saptasurmusicfees.epizy.com/",
+        "bgcolor": "#3254a8",
         "id":1
     }
     

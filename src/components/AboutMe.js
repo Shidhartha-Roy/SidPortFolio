@@ -11,19 +11,23 @@ const AboutMe = ({ name,email,location, brand}) => {
     });
 
 
-    const [downloading, setDownloading] = useState(false);
+    const [downloading, setDownloading] = useState({
+      message: "Download Resume"
+    });
 
-    useEffect(() => {
-      setDownloading(false);
-    }, [downloading]);
+    
 
     const handleDownload = () => {
-        setDownloading(true);
+        setDownloading({
+          message: "Downloading...",
+        })
         const link = document.createElement("a");
         link.href = "https://drive.google.com/file/d/1ZXH1YuNsiGx77ABeZNQesAbgNR52ACKp/view?usp=sharing";
         link.onload = () => {
           link.remove();
-          setDownloading(false);
+          setDownloading({
+            message: "Download"
+          });
         };
         document.body.appendChild(link);
         link.click();
@@ -79,8 +83,8 @@ return(
             </div>
           </div>
           <div className="buttonContainer">
-            <button className="btn downloadCV" onClick={handleDownload} disabled={downloading}>
-              {downloading ? "Downloading..." : "Download Resume"}
+            <button className="btn downloadCV" onClick={handleDownload}>
+              {downloading.message}
             </button>{" "}
             <Socialicons/>
           </div>
