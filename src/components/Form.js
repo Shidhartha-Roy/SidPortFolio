@@ -15,6 +15,10 @@ const ContactUs = () => {
 
   const success = useState(false);
 
+  const [sendButton, setSendButton] = useState({
+    message: "Send Message",
+  })
+
   const [formData, setFormData] = useState({
     from_name: "",
     from_email: "",
@@ -22,15 +26,42 @@ const ContactUs = () => {
     message: "",
     
   });
+
+  const reviveForm = () => {
+    setTimeout(() => {
+      setSendButton({
+        message: "Send Message",
+      })
+      setFormData({
+        from_name: "",
+        from_email: "",
+        subject: "",
+        message: "",
+      })
+    }, 3000)
+  }
+
   const sendEmail = (e) => {
       e.preventDefault();
-      alert("Email Sent");
+      setSendButton({
+        message: "Sending...",
+      })
+
+
   
       emailjs.sendForm('service_mdrpn3m', 'template_m04djxh', form.current, 'xz44QJhu_ypIQkas_')
-        .then((result) => {
-            console.log(result.text);
+        .then(() => {
+            setSendButton({
+              message: "Message sent"
+            })
+            reviveForm();
+
         }, (error) => {
             console.log(error.text);
+            setSendButton({
+              message: "Message Not Sent"
+            })
+            reviveForm();
         });
     };
    
@@ -103,7 +134,7 @@ const ContactUs = () => {
         ></textarea>
       </div>
       <div className="col-12 formGroup formSubmit">
-        <button className="btn">{success ? "Message Sent" : "Send Message"}</button>
+        <button className="btn">{sendButton.message}</button>
         
       </div>
     </motion.form>
