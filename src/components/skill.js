@@ -16,6 +16,7 @@ import ECLIPSE from "../images/eclipseLogo.png"
 import ANDROID from "../images/asLogo.png"
 import REACT from "../images/reactLogo.png"
 import REST from "../images/restLogo.png"
+import LARAVEL from "../images/laraLogo.png"
 
 
 
@@ -32,7 +33,7 @@ function Slider() {
     <>
       <h1 style={{ textAlign: "center" }}>Example to setup your carousel in react</h1>
       <div className="Slider">
-        <Carousel breakPoints={breakPoints}>
+        <Carousel breakPoints={breakPoints} enableAutoPlay autoPlaySpeed={3000} pagination={false}>
           <Item>
             <img className="img" src={HTML} />
           </Item>
@@ -71,6 +72,9 @@ function Slider() {
           </Item>
           <Item>
           <img className="img" src={REST} style={{height: "270px", width: "450px", marginTop: "-16px"}}/>
+          </Item>
+          <Item>
+          <img className="img" src={LARAVEL} style={{height: "270px", width: "450px", marginTop: "-16px"}}/>
           </Item>
         </Carousel>
       </div>
